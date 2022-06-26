@@ -1,4 +1,3 @@
-
 type CityType={
     title:string,
     countryName:string
@@ -18,7 +17,9 @@ type TechnologiesType={
     id:number,
     title:string
 }
-const student = {
+
+
+const student:StudentType = {
     name: "Test",
     age: 34,
     isActive: false,
