@@ -1,4 +1,4 @@
-type CityType={
+type LocalCityType={
     title:string,
     countryName:string
 }
