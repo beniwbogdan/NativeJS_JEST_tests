@@ -6,11 +6,14 @@ export const mult = (a: number, b: number) => {
 }
 
 export function splitIntoWords(sentense: string) {
+
     const words = sentense.toLowerCase().split(" ");
-    return words.filter(w => w !== "" && w!=="-")
-        .map(w => {
-            w.replace("!", "")
-            .replace(".", "");
-        });
+
+    return words;
+
+    // return words.filter(w => w !== "" && w!=="-").map(w => {
+    //         w.replace("!", "")
+    //         .replace(".", "");
+    //   });
 
 }

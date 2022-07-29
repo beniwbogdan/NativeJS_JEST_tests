@@ -1,4 +1,4 @@
-import {CityType} from "./02_02";
+import { CityType } from "./02_02";
 
 let city: CityType;
 
@@ -52,14 +52,14 @@ beforeEach(() => {
             }
 
         }, {
-            type:"FIRE-STATION",
-            budget:500000,
-            stuffCount:{
-                number:1000
+            type: "FIRE-STATION",
+            budget: 500000,
+            stuffCount: {
+                number: 1000
             },
-            address:{
-                street:{
-                    title:"South Str"
+            address: {
+                street: {
+                    title: "South Str"
                 }
             }
         }],
@@ -69,7 +69,7 @@ beforeEach(() => {
 })
 
 
-test("test city should contains 3 houses", () => {
+test("city contains 3 houses", () => {
     expect(city.houses.length).toBe(3);
 
     expect(city.houses[0].buildedAt).toBe(2012);
@@ -90,7 +90,7 @@ test("test city should contains 3 houses", () => {
     expect(city.houses[2].address.street.title).toBe("Happy street");
 
 })
-test("test city should contains hospital and fire station", () => {
+test("city contains hospital and fire station", () => {
     expect(city.governmentBuildings[0].type).toBe("HOSPITAL");
     expect(city.governmentBuildings[0].budget).toBe(200000);
     expect(city.governmentBuildings[0].stuffCount.number).toBe(200);

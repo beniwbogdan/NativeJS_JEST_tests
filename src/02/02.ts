@@ -1,25 +1,27 @@
-type LocalCityType={
-    title:string,
-    countryName:string
+
+type TechnologiesType = {
+    id: number,
+    title: string
 }
-type AddressType={
-    streetName:string,
-    city:CityType
+
+type LocalCityType = {
+    title: string,
+    countryName: string
 }
-type StudentType={
-    name:string,
-    age:number,
-    isActive:boolean,
-    address:AddressType
-    technologies:Array<TechnologiesType>
+type AddressType = {
+    streetName: string,
+    city: LocalCityType
 }
-type TechnologiesType={
-    id:number,
-    title:string
+type StudentType = {
+    name: string,
+    age: number,
+    isActive: boolean,
+    address: AddressType
+    technologies: Array<TechnologiesType>
 }
 
 
-const student:StudentType = {
+const student: StudentType = {
     name: "Test",
     age: 34,
     isActive: false,
@@ -27,7 +29,7 @@ const student:StudentType = {
         streetName: "Grota Roweckiego",
         city: {
             title: "Krakow",
-            countryName : "Poland"
+            countryName: "Poland"
         }
     },
     technologies: [
